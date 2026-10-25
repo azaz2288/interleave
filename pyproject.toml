@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "interleave-audit"
+version = "0.1.0"
+description = "Bounded exact linearizability auditing with replayable witnesses and process-level lost-update experiments"
+requires-python = ">=3.12"
+readme = "README.md"
+license = "MIT"
+[project.scripts]
+interleave = "interleave.__main__:main"
+[tool.setuptools.packages.find]
+include = ["interleave*"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "B", "UP", "I"]

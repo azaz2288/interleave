@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "model": "register",
+  "initial": 0,
+  "operations": [
+    {"id":"a","process":"p1","call":10,"return":20,"kind":"cas","input":[0,1],"output":true},
+    {"id":"b","process":"p2","call":11,"return":21,"kind":"cas","input":[0,2],"output":true},
+    {"id":"noise","process":"observer","call":10,"return":22,"kind":"read","input":null,"output":0}
+  ]
+}
